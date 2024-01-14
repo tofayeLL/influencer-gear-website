@@ -15,8 +15,11 @@
 header * {
     font-family: 'Poppins', sans-serif;
 }
+main * h3{
+    font-family: 'Poppins', sans-serif;
+}
 
-main * {
+main * p{
     font-family: 'Inter', sans-serif;
 }
 
@@ -25,6 +28,20 @@ header {
     max-width: 1190px;
     margin: 70px auto;
 }
+
+/* main related styles */
+main section{
+    width: 77%;
+    max-width: 1110px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+/* main{
+    width: 77%;
+    max-width: 1110px;
+    margin: 0 auto;
+} */
 
 p {
     font-size: 13px;
@@ -119,6 +136,17 @@ nav a {
     border-radius: 41px;
 }
 
+
+
+
+/* sponsor related styles */
+
+.sponsor .sponsor-img{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
 
 
 
