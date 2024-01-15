@@ -219,6 +219,21 @@ nav a {
     margin-top: 6px;
 }
 
+.end-btn{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 30px;
+  
+}
+.end-btn button{
+    background-color: white;
+    color: #E02C6D;
+}
+    
+
+    
+
 
 /* featured related styles */
 
@@ -289,16 +304,15 @@ nav a {
     }
 
 
+  
+
     .card-container {
         grid-template-columns: repeat(1, 1fr);
         gap: 20px;
     }
 
-
-
-
-
-    nav {
+    nav,
+    .featured {
         flex-direction: column;
         gap: 20px;
     }
@@ -311,15 +325,23 @@ nav a {
 
 
 
-
-
-
     .banner .banner-text {
         max-width: 100%;
         text-align: center;
     }
 
+    /* featured section related styles */
 
+    .featured .featured-text {
+        order: 1;
+        width: 100%;
+        text-align: center;
+    }
+
+    .featured .featured-img {
+        order: 2;
+        width: 100%;
+    }
 
 
     /* nav */
