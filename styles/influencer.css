@@ -18,7 +18,8 @@ header * {
     font-family: 'Poppins', sans-serif;
 }
 
-main * h3, footer h3 {
+main * h3,
+footer h3 {
     font-family: 'Poppins', sans-serif;
 }
 
@@ -26,7 +27,7 @@ main * p {
     font-family: 'Inter', sans-serif;
 }
 
-footer * p{
+footer * p {
     font-family: 'Manrope', sans-serif;
     font-size: 14px;
     font-weight: 700;
@@ -146,14 +147,14 @@ nav a {
 
 /* sponsor related styles */
 
-.sponsor-img-container{
+.sponsor-img-container {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-.sponsor-img-container .sponsor-img img{
-   width: 100%;
+.sponsor-img-container .sponsor-img img {
+    width: 100%;
 
 }
 
@@ -204,7 +205,8 @@ nav a {
     font-size: 12px;
     font-weight: 700;
 }
-.card-container .card .rating span{
+
+.card-container .card .rating span {
     color: #FB8200;
 }
 
@@ -219,20 +221,21 @@ nav a {
     margin-top: 6px;
 }
 
-.end-btn{
+.end-btn {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     margin-top: 30px;
-  
+
 }
-.end-btn button{
+
+.end-btn button {
     background-color: white;
     color: #E02C6D;
 }
-    
 
-    
+
+
 
 
 /* featured related styles */
@@ -271,31 +274,32 @@ nav a {
 
 /* Footer related styles */
 
-footer{
+footer {
     background: #0A0826;
     margin-top: 100px;
 }
 
-.footer-text{
+.footer-text {
     max-width: 26%;
     margin: 0 auto;
     text-align: center;
     padding: 40px 0;
-    
+
 }
 
-.footer-text .footer-icon span{
+.footer-text .footer-icon span {
     margin-right: 10px;
     padding: 5px;
     font-size: 30px;
-   
-   
+
+
 }
+
 .footer-text .footer-icon {
     margin-top: 20px;
 }
 
-.footer-text *{
+.footer-text * {
     color: #FFF;
     margin-bottom: 5px;
 }
@@ -312,6 +316,7 @@ footer{
 /* responsive for small devices */
 
 @media screen and (max-width: 576px) {
+
     /* shared styles */
     main section {
         margin-top: 50px;
@@ -326,7 +331,6 @@ footer{
     }
 
 
-  
 
     .card-container {
         grid-template-columns: repeat(1, 1fr);
@@ -352,8 +356,8 @@ footer{
     }
 
 
-     /* nav */
-     nav a {
+    /* nav */
+    nav a {
         margin-right: 20px;
     }
 
@@ -362,8 +366,20 @@ footer{
         font-size: 20px;
     }
 
+    /* sponsor */
+    .sponsor-img-container {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
 
+    .sponsor-img-container .sponsor-img {
+        flex-basis: 20%;
+    }
 
+    /* sponsor */
 
     /* featured section related styles */
 
