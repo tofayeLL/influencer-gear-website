@@ -31,12 +31,17 @@ header {
 }
 
 /* main related styles */
-.container{
+.container {
     width: 77%;
     max-width: 1110px;
     margin: 0 auto;
-    
+
 }
+
+main section {
+    margin-top: 100px;
+}
+
 
 /* main{
     width: 77%;
@@ -59,7 +64,7 @@ button {
     color: #FFF;
     font-size: 14px;
     font-weight: 700;
-    padding: 10px 24px;
+    padding: 12px 24px;
     border: none;
     background-color: #E02C6D;
 }
@@ -111,10 +116,6 @@ nav a {
     max-width: 47%;
 }
 
-.banner .banner-text * {
-    margin-bottom: 13px;
-}
-
 .banner .banner-img {
     background-image: url('../images/Circle\ design.svg');
     background-size: 100% 100%;
@@ -132,6 +133,7 @@ nav a {
 
 .banner p {
     color: #3A3A3A;
+    margin: 14px 0;
 }
 
 .banner button {
@@ -162,7 +164,7 @@ nav a {
 
 /* popular section related design */
 
-.popular h4{
+.popular h4 {
     text-align: center;
     font-family: 'Poppins', sans-serif;
     font-size: 24px;
@@ -170,11 +172,11 @@ nav a {
     margin-bottom: 40px;
 }
 
-.card-container{
+.card-container {
     display: grid;
     gap: 25px;
-    grid-template-columns: repeat(3,1fr);
-  
+    grid-template-columns: repeat(3, 1fr);
+
 }
 
 
@@ -185,7 +187,7 @@ nav a {
     padding: 15px 12px;
 }
 
-.card-container .card img{
+.card-container .card img {
     width: 100%;
 }
 
@@ -218,6 +220,41 @@ nav a {
 }
 
 
+/* featured related styles */
+
+.featured {
+    display: flex;
+    gap: 80px;
+    align-items: center;
+}
+
+.featured .featured-text,
+.featured .featured-img {
+    width: 50%;
+}
+
+.featured .featured-img img {
+    width: 100%;
+}
+
+.featured .featured-text h3 {
+    font-size: 29px;
+
+}
+
+.featured .featured-text p {
+    max-width: 90%;
+    color: #6C6C6C;
+    font-size: 13px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    margin: 14px 0;
+}
+
+
+
+
+
 
 
 
@@ -243,14 +280,19 @@ nav a {
 @media screen and (max-width: 576px) {
     /* shared styles */
 
-    .container{
+    .container {
         width: 90%;
     }
+
     header {
         width: 90%;
     }
 
-   
+
+    .card-container {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
 
 
 
