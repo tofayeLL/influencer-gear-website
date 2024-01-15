@@ -50,13 +50,6 @@ main section {
     margin-top: 100px;
 }
 
-
-/* main{
-    width: 77%;
-    max-width: 1110px;
-    margin: 0 auto;
-} */
-
 p {
     font-size: 13px;
     font-weight: 600;
@@ -153,18 +146,14 @@ nav a {
 
 /* sponsor related styles */
 
-.sponsor .sponsor-img {
-    /*     display: flex;
+.sponsor-img-container{
+    display: flex;
     justify-content: space-around;
     align-items: center;
-    flex-wrap: wrap;
-    min-width: 500px; */
-    display: grid;
-    gap: 40px;
-    align-items: center;
-    grid-template-columns: repeat(7, 1fr);
-    max-width: 90%;
-    margin: 0 auto;
+}
+
+.sponsor-img-container .sponsor-img img{
+   width: 100%;
 
 }
 
@@ -214,6 +203,9 @@ nav a {
     color: #5E6366;
     font-size: 12px;
     font-weight: 700;
+}
+.card-container .card .rating span{
+    color: #FB8200;
 }
 
 .card-container .card .card-text {
@@ -317,25 +309,13 @@ footer{
 
 
 
-
-
-
-
-
-
-
-
-/* hide */
-.hide {
-    display: none;
-}
-
-
-
 /* responsive for small devices */
 
 @media screen and (max-width: 576px) {
     /* shared styles */
+    main section {
+        margin-top: 50px;
+    }
 
     .container {
         width: 90%;
@@ -365,12 +345,25 @@ footer{
     }
 
 
-
-
-    .banner .banner-text {
+    .banner .banner-text,
+    .footer-text {
         max-width: 100%;
         text-align: center;
     }
+
+
+     /* nav */
+     nav a {
+        margin-right: 20px;
+    }
+
+    /* banner */
+    .banner h3 {
+        font-size: 20px;
+    }
+
+
+
 
     /* featured section related styles */
 
@@ -385,14 +378,4 @@ footer{
         width: 100%;
     }
 
-
-    /* nav */
-    nav a {
-        margin-right: 20px;
-    }
-
-    /* banner */
-    .banner h3 {
-        font-size: 20px;
-    }
 }
